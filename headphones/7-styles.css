@@ -1,0 +1,256 @@
+:root{
+  --bg-dark:#081826;
+  --accent:#ff6f6f;
+  --muted:#9aa3ad;
+  --max-width:1100px;
+}
+
+*{
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Poppins',system-ui,Segoe UI,Roboto,Arial,sans-serif;
+  margin:0;
+  color:#122430;
+  background:#fff;
+}
+
+.wrap{
+  max-width:var(--max-width);
+  margin:0 auto;
+  padding:0 18px;
+}
+
+/* Header */
+.site-header{
+  position:fixed;
+  left:0;
+  right:0;
+  top:0;
+  z-index:20;
+  padding:16px 0;
+}
+.header-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 6px;
+}
+.logo{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  color:#fff;
+}
+.logo-mark{
+  width:36px;
+  height:36px;
+  border-radius:6px;
+  background:linear-gradient(135deg,#ff7b7b,#ff5777);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:700;
+  color:#fff;
+}
+.logo-text{
+  font-weight:600;
+  letter-spacing:1px;
+  color:#fff;
+}
+
+/* Hide nav on small */
+.main-nav{
+  display:none;
+}
+
+/* Hero */
+.hero{
+  min-height:720px;
+  background-image:url('images/headphones_hero_1.jpg');
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  align-items:flex-start;
+  padding-top:80px;
+  color:#fff;
+}
+.hero-inner{
+  position:relative;
+  text-align:center;
+  color:#fff;
+  padding:40px 0 60px;
+}
+.hero h1{
+  font-size:22px;
+  margin:0 0 10px 0;
+  font-weight:700;
+  line-height:1.15;
+}
+.hero .lead{
+  font-size:13px;
+  opacity:0.95;
+  margin:0 0 14px;
+}
+.btn-primary{
+  display:inline-block;
+  background:var(--accent);
+  color:#fff;
+  padding:12px 28px;
+  border-radius:26px;
+  text-decoration:none;
+  font-weight:600;
+  margin:12px 0;
+}
+.hero-desc{
+  max-width:360px;
+  margin:20px auto 0;
+  color:rgba(255,255,255,0.9);
+  font-size:13px;
+  line-height:1.6;
+}
+
+/* What we do */
+.what{
+  background:#fff;
+  padding:60px 0 40px;
+}
+.what h2{
+  text-align:center;
+  margin:0 0 14px;
+  font-size:20px;
+  color:#0e2631;
+}
+.what .center{
+  max-width:520px;
+  margin:0 auto 22px;
+  color:var(--muted);
+  text-align:center;
+}
+.features{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:18px;
+  margin-top:20px;
+}
+.feature{
+  text-align:center;
+  padding:12px 6px;
+}
+.feature .icon{
+  display:block;
+  margin:0 auto 10px;
+}
+.feature h4{
+  margin:6px 0 6px;
+  font-size:14px;
+}
+.feature p{
+  color:var(--muted);
+  font-size:13px;
+  margin:0 auto;
+  max-width:260px;
+}
+
+/* Results section */
+.results{
+  background-image:url('images/headphones_hero_2.jpg');
+  background-size:cover;
+  background-position:center;
+  color:#fff;
+  padding:60px 0;
+  position:relative;
+}
+.results-inner{
+  position:relative;
+  text-align:center;
+  padding:20px 0;
+}
+.badges{
+  display:flex;
+  gap:18px;
+  justify-content:center;
+  margin-top:28px;
+  flex-direction:column;
+  align-items:center;
+}
+.badge{
+  width:180px;
+  height:120px;
+  background:var(--accent);
+  clip-path:polygon(50% 0,95% 40%,78% 100%,22% 100%,5% 40%);
+  color:#fff;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  margin:12px 0;
+}
+.badge .num{
+  font-weight:700;
+  font-size:20px;
+}
+.badge .btxt{
+  font-size:12px;
+  opacity:0.95;
+  margin-top:6px;
+}
+
+/* Contact */
+.contact{
+  background:#fff;
+  padding:40px 0;
+}
+.contact-inner{
+  max-width:520px;
+  margin:0 auto;
+  text-align:center;
+  padding:10px 0;
+}
+.contact-form{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  margin-top:18px;
+}
+.contact-form input,.contact-form textarea{
+  border:0;
+  border-bottom:1px solid #e6e9ec;
+  padding:10px 6px;
+  font-size:13px;
+  resize:none;
+}
+.contact-form textarea{
+  min-height:90px;
+}
+.contact-form .btn-primary{
+  align-self:center;
+}
+
+/* Footer */
+.site-footer{
+  background:var(--bg-dark);
+  color:#95a5ab;
+  padding:20px 0;
+  margin-top:28px;
+}
+.footer-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  flex-direction:column;
+  gap:12px;
+  padding:8px 0;
+}
+.footer-left .logo-text{
+  color:#fff;
+}
+
+/* Utility */
+.center{
+  text-align:center;
+}
+.vis{
+  display:block;
+}
